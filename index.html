@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    
+    <title>Darshan - Full Stack Developer</title>
+</head>
+<body class="overflow-hidden">
+
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
+        <img src="./images/header-bg-color.png" class="w-full" alt="">
+    </div>
+<!-- -----------Nav Bar------------ -->
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-10">
+        <img class="w-28 cursor-pointer mr-14" src="./images/Darshan_water_blue.png" alt="">
+        <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="flex items-center gap-4 ml-auto">
+            <button><img src="./images/moon_icon.png" class="w-6" alt=""></button>
+            <a href="contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4">Contact <img src="./images/arrow-icon.png" class="w-3" alt=""></a>
+            
+            <button onclick="OpenMenu()">
+                <img src="./images/menu-black.png" alt="" class="block md:hidden ml-3 w-8">
+            </button>
+        
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="">
+            <ul 
+            class="flex md:hidden flex-col py-20 px-10 gap-4 fixed -right-64 top-0 bottom-0 w-64 z-10 h-screen bg-slate-400 transition duration-500"
+            id="sidemenu">
+            <div class="absolute right-6 top-6" onclick="CloseMenu ()"> <img src="./images/close-black.png" class="w-5 cursor-pointer" alt=""></div>
+                <li><a href="#home" onclick="CloseMenu ()">Home</a></li>
+                <li><a href="#about" onclick="CloseMenu ()">About</a></li>
+                <li><a href="#services" onclick="CloseMenu ()">Services</a></li>
+                <li><a href="#portfolio" onclick="CloseMenu ()">Portfolio</a></li>
+                <li><a href="#contact" onclick="CloseMenu ()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
