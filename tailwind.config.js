@@ -3,7 +3,8 @@ tailwind.config = {
         extend:{
 
             gridTemplateColumns:{
-                'auto':'repeat(auto-fit, minmax(200px, 1fr))'
+                'auto':'repeat(auto-fit, minmax(200px, 1fr))',
+                'mobile':'repeat(auto-fit, minmax(50px, 1fr))'
             },
             fontFamily:{
                 Outfit:["Outfit", "sans-serif"],
